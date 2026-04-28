@@ -1,11 +1,11 @@
 import React from "react";
 
 function Article({ title, date, preview }) {
-  const defaultDate = "January 1, 2020";
+  const displayDate = date ? date : "January 1, 2020";
   return (
     <article>
       <h3>{title}</h3>
-      <small>{date || defaultDate}</small>
+      <small>{displayDate}</small>
       <p>{preview}</p>
     </article>
   );
