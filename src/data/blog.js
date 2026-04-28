@@ -20,6 +20,7 @@ const blogData = {
     {
       id: 3,
       title: "Function vs Class Components",
+      // No date – default "January 1, 1970" will be used
       preview: "React, meet OOJS.",
       minutes: 47,
     },
