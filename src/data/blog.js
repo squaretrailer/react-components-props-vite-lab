@@ -1,6 +1,6 @@
 const blogData = {
   name: "Underreacted",
-  image: "https://via.placeholder.com/215",   // ✅ plain URL, test‑friendly
+  image: "https://via.placeholder.com/215",
   about: "A blog about learning React",
   posts: [
     {
