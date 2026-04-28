@@ -1,8 +1,6 @@
-import logo from "../assets/logo";
-
 const blogData = {
   name: "Underreacted",
-  image: logo,
+  image: "https://via.placeholder.com/215",   // ✅ plain URL (test‑friendly)
   about: "A blog about learning React",
   posts: [
     {
