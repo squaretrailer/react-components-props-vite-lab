@@ -1,29 +1,14 @@
 import React from "react";
 
-function Article({ title, date, content, imageUrl }) {
+function Article({ title, date, preview }) {
+  const defaultDate = "January 1, 2020";
   return (
-    <article style={styles.article}>
-      <img src={imageUrl} alt={title} style={styles.image} />
-      <h2>{title}</h2>
-      <small>{date}</small>
-      <p>{content}</p>
-      <hr />
+    <article>
+      <h3>{title}</h3>
+      <small>{date || defaultDate}</small>
+      <p>{preview}</p>
     </article>
   );
 }
-
-const styles = {
-  article: {
-    marginBottom: "2rem",
-    padding: "1rem",
-    borderBottom: "1px solid #ccc",
-  },
-  image: {
-    width: "100%",
-    maxHeight: "200px",
-    objectFit: "cover",
-    borderRadius: "8px",
-  },
-};
 
 export default Article;

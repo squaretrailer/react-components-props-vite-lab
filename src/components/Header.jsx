@@ -1,21 +1,11 @@
 import React from "react";
 
-function Header({ title, author }) {
+function Header({ name }) {
   return (
-    <header style={styles.header}>
-      <h1>{title}</h1>
-      <p>by {author}</p>
+    <header>
+      <h1>{name}</h1>
     </header>
   );
 }
-
-const styles = {
-  header: {
-    backgroundColor: "#282c34",
-    color: "white",
-    padding: "2rem",
-    textAlign: "center",
-  },
-};
 
 export default Header;

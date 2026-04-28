@@ -1,21 +1,13 @@
 import React from "react";
 
-function About({ aboutText }) {
+function About({ about, image }) {
+  const defaultImage = "https://via.placeholder.com/150?text=Blog+Logo";
   return (
-    <section style={styles.about}>
-      <h2>About Me</h2>
-      <p>{aboutText}</p>
-    </section>
+    <aside>
+      <img src={image || defaultImage} alt="blog logo" />
+      <p>{about}</p>
+    </aside>
   );
 }
-
-const styles = {
-  about: {
-    maxWidth: "800px",
-    margin: "2rem auto",
-    padding: "0 1rem",
-    textAlign: "center",
-  },
-};
 
 export default About;

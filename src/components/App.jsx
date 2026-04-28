@@ -6,10 +6,10 @@ import blogData from "../data/blog";
 
 function App() {
   return (
-    <div className="App">
-      <Header title={blogData.title} author={blogData.author} />
-      <About aboutText={blogData.aboutText} />
-      <ArticleList articles={blogData.articles} />
+    <div>
+      <Header name={blogData.name} />
+      <About about={blogData.about} image={blogData.image} />
+      <ArticleList posts={blogData.posts} />
     </div>
   );
 }
